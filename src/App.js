@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div id="main-container" className="relative min-h-screen bg-d-blue">
+    <div id="main-container" className="relative min-h-screen bg-d-blue inter">
       <Navbar></Navbar>
       <BackgroundBeams className="z-0"></BackgroundBeams>
     </div>
