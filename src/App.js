@@ -135,13 +135,19 @@ function App() {
           <div className='space-y-6'>
             <h2 className="text-5xl font-medium text-white">Contact Me</h2>
             <div className='flex-col items-center justify-center font-medium'>
-              <p>Feel free to shoot me a message via</p>
+              <p>Feel free to reach me via</p>
               <p className='text-xl font-bold text-purple-500'>chasekellogg12@gmail.com</p>
             </div>
             <h3 className='font-medium'>or</h3>
-            <div className='flex-col items-center justify-center h-full pt-3'>
+            <div className='flex-col items-center justify-center h-full pt-2'>
               <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='z-40 items-center p-2 px-4 text-lg font-bold text-white border border-purple-500 rounded-full bg-zinc-900 hover:bg-purple-800'>
                 LinkedIn
+              </a>
+            </div>
+            <h3 className='font-medium'>or</h3>
+            <div className='flex-col items-center justify-center h-full pt-1'>
+              <a href="https://github.com/chasekellogg12" target="_blank" rel="noopener noreferrer" className='z-40 items-center p-2 px-4 text-lg font-bold text-white border border-purple-500 rounded-full bg-zinc-900 hover:bg-purple-800'>
+                GitHub
               </a>
             </div>
           </div>
