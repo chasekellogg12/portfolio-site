@@ -1,3 +1,4 @@
+
 function Navbar() {
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
@@ -24,7 +25,7 @@ function Navbar() {
                     <button onClick={() => scrollToSection('about')}>About</button>
                     <button onClick={() => scrollToSection('portfolio')}>Portfolio</button>
                     <button onClick={() => scrollToSection('contact')}>Contact</button>
-                    <button>Resume</button>
+                    <a href="/ChaseKellogg_Portfolio_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </div>
             </div>
         </div>
