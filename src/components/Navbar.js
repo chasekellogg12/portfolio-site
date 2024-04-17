@@ -10,7 +10,7 @@ function Navbar() {
             <div className='flex items-center justify-around w-full h-full'>
                 <div id='home-button' className='flex w-1/2 pl-20'>
                     <button 
-                        className="text-3xl font-bold"
+                        className="text-3xl font-bold text-white"
                         onClick={() => {
                             window.scrollTo({
                                 top: 0,
