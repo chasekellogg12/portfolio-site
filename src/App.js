@@ -10,29 +10,54 @@ import musicplayer from './assets/MusicPlayer.jpeg';
 import HDhs from './assets/HDHeadshot.jpg';
 import emorylane from './assets/EmoryLane.png';
 import predictingtraffic from './assets/PredictingTraffic.png';
+import { motion } from "framer-motion";
+import { LampContainer } from './components/LampContainer';
 
 function App() {
-  // have 
+  const scrollTo = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' , block: 'start' });
+    }
+};
   return (
     <div id="main-container" className="relative min-h-screen bg-d-blue inter">
       <Navbar></Navbar>
-      <BackgroundBeams className="z-0"></BackgroundBeams>
+      <BackgroundBeams className="z-20"></BackgroundBeams>
 
-      <div className="flex-col items-center pt-16">
-        <section id="home" className="relative z-10 flex items-center justify-center w-full min-h-screen text-center">
-          <div className='w-[900px] flex justify-between bg-transparent'>
-            <div className='flex flex-col items-center justify-center w-1/2'>
-              <p className="w-full text-5xl text-gray-200">Hello, I'm Chase.</p>
-              <span className='w-full text-3xl text-white'>I'm a software developer.</span>
-            </div>
-            <div className='flex items-center justify-center w-1/2'>
-              <img src={HDhs} alt="Headshot" className="object-cover rounded-full h-96 w-96" />
-            </div>
+      <div className="flex-col items-center pt-36">
+        <section id="home" className="relative z-auto flex items-center justify-center w-full min-h-screen text-center">
+          <div className='w-[900px] flex justify-center bg-transparent items-center flex-col'>
+            <LampContainer className="justify-center bg-transparent">
+              <motion.h1
+                initial={{ opacity: 0.5, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.8,
+                  ease: "easeInOut",
+                }}
+                className="py-4 mt-8 text-4xl font-medium tracking-tight text-center text-transparent bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text md:text-7xl">
+                  Hello, I'm Chase. <br /> I'm a software developer. <br />
+              </motion.h1>
+              <motion.button 
+                initial={{ opacity: 0.5, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.8,
+                  ease: "easeInOut",
+                }}
+                onClick={() => scrollTo('portfolio')}
+                className='z-40 items-center p-2 px-4 text-lg text-white rounded-full bg-cyan-500 hover:bg-cyan-800'>
+                  Learn More
+              </motion.button>
+            </LampContainer>
           </div>
         </section>
 
 
-        <section id="portfolio" className="relative z-10 flex items-center justify-center min-h-screen text-center bg-transparent scroll-m-24">
+        <section id="portfolio" className="relative z-40 flex items-center justify-center min-h-screen text-center bg-transparent scroll-m-24">
           <div className='flex-col items-center w-screen space-y-6'>
             <div>
               <h2 id="portfolio-title" className="text-3xl font-bold text-white">Portfolio</h2>
@@ -46,17 +71,17 @@ function App() {
           </div>
         </section>
         
-        <section id="contact" className="relative z-10 flex items-center justify-center min-h-screen text-center text-white bg-transparent">
-          <div className='space-y-4'>
+        <section id="contact" className="relative z-40 flex items-center justify-center min-h-screen text-center text-white bg-transparent">
+          <div className='space-y-6'>
             <h2 className="text-3xl font-bold">Contact Me</h2>
             <div className='flex-col items-center justify-center'>
-              <p>Feel free to shoot me an email at</p>
-              <p className='text-xl font-bold text-mint'>chasekellogg12@gmail.com</p>
+              <p>Feel free to shoot me a message via</p>
+              <p className='text-xl font-bold text-cyan-500'>chasekellogg12@gmail.com</p>
             </div>
             <h3>or</h3>
-            <div className='flex-col items-center justify-center'>
-              <p>Reach me through social media</p>
-              <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='text-xl font-bold text-l-blue'>
+            <div className='flex-col items-center justify-center h-full space-y-8'>
+            
+              <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='p-2 px-4 mt-8 text-xl font-bold text-white rounded-full bg-cyan-500 hover:bg-cyan-800'>
                 LinkedIn
               </a>
             </div>
