@@ -51,7 +51,7 @@ function App() {
                   ease: "easeInOut",
                 }}
                 onClick={() => scrollTo('about')}
-                className='z-40 items-center p-2 px-4 text-lg font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
+                className='z-40 items-center p-2 px-4 text-lg font-bold text-white border border-purple-500 rounded-full bg-zinc-900 hover:bg-purple-800'>
                   Learn More
               </motion.button>
             </LampContainer>
@@ -65,11 +65,11 @@ function App() {
                     <p className='font-medium'>
                       I’m a recent graduate of Emory University with a dual degree in Computer Science and Business. My lifelong passion for coding began over a decade ago in middle school when I wrote scripts in Lua to make games. <br/><br/>
                       My journey has since evolved from crafting simple games and moderating Lua forums to mastering full-stack web development. As a developer, I mend a meticulous attention to detail with a broad technical skill set. Driven by curiosity and an unwavering dedication to learning, I thrive on finding elegant solutions to complex challenges. <br/><br/>
-                      When I'm not coding, you can find me cheering on the Los Angeles Chargers or hanging out with my cat. <br/><br/>
-                      Thank you for visiting my site. I am eager to contribute my skills to your team, and I look forward to the opportunity to grow and create impactful technology solutions together.
+                      When I'm not coding, you can find me cheering on the LA Chargers, going to the gym, or hanging out with my cat. <br/><br/>
+                      Thank you for visiting my site. I'm always eager to learn from and share my skills with equally-passionate engineers, so don't hesitate to reach out!
                     </p>
                   </div>
-                  <motion.button 
+                  <motion.div 
                     initial={{ opacity: 0.5, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -77,10 +77,15 @@ function App() {
                       duration: 0.8,
                       ease: "easeInOut",
                     }}
-                    onClick={() => scrollTo('portfolio')}
-                    className='z-40 items-center p-2 px-4 text-lg font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
-                      Portfolio
-                  </motion.button>
+                    className='flex justify-center w-full space-x-8'>
+                      <button onClick={() => scrollTo('contact')} className='z-40 items-center p-2 px-4 text-lg font-bold text-white border border-purple-500 rounded-full bg-zinc-900 hover:bg-purple-800'>
+                        Reach Out
+                      </button>
+                      
+                      <button onClick={() => scrollTo('portfolio')} className='z-40 items-center p-2 px-4 text-lg font-bold text-white border border-purple-500 rounded-full bg-zinc-900 hover:bg-purple-800'>
+                        See What I've Made
+                      </button>
+                  </motion.div>
                 </div>
                 <div id='headshot-and-tech-stack' className='flex flex-col items-center w-1/2 space-y-6 overflow-x-auto'>
                     <img src={HDhs} alt="Headshot" className="object-cover rounded-full w-72 h-72"/>
@@ -135,7 +140,7 @@ function App() {
             </div>
             <h3 className='font-medium'>or</h3>
             <div className='flex-col items-center justify-center h-full pt-3'>
-              <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='p-2 px-4 mt-8 text-xl font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
+              <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='z-40 items-center p-2 px-4 text-lg font-bold text-white border border-purple-500 rounded-full bg-zinc-900 hover:bg-purple-800'>
                 LinkedIn
               </a>
             </div>
