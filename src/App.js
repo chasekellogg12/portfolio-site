@@ -21,7 +21,7 @@ function App() {
     }
 };
   return (
-    <div id="main-container" className="relative min-h-screen bg-d-blue inter">
+    <div id="main-container" className="relative min-h-screen bg-black inter">
       <Navbar></Navbar>
       <BackgroundBeams className="z-20"></BackgroundBeams>
 
@@ -37,7 +37,7 @@ function App() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
-                className="py-4 mt-8 text-4xl font-medium tracking-tight text-center text-transparent bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text md:text-7xl">
+                className="py-4 mt-8 text-4xl font-medium tracking-tight text-center text-transparent bg-gradient-to-br from-purple-300 to-slate-500 bg-clip-text md:text-7xl">
                   Hello, I'm Chase. <br /> I'm a software developer. <br />
               </motion.h1>
               <motion.button 
@@ -49,7 +49,7 @@ function App() {
                   ease: "easeInOut",
                 }}
                 onClick={() => scrollTo('portfolio')}
-                className='z-40 items-center p-2 px-4 text-lg text-white rounded-full bg-cyan-500 hover:bg-cyan-800'>
+                className='z-40 items-center p-2 px-4 text-lg text-white bg-purple-500 rounded-full hover:bg-purple-800'>
                   Learn More
               </motion.button>
             </LampContainer>
@@ -76,12 +76,12 @@ function App() {
             <h2 className="text-3xl font-bold">Contact Me</h2>
             <div className='flex-col items-center justify-center'>
               <p>Feel free to shoot me a message via</p>
-              <p className='text-xl font-bold text-cyan-500'>chasekellogg12@gmail.com</p>
+              <p className='text-xl font-bold text-purple-500'>chasekellogg12@gmail.com</p>
             </div>
             <h3>or</h3>
             <div className='flex-col items-center justify-center h-full space-y-8'>
             
-              <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='p-2 px-4 mt-8 text-xl font-bold text-white rounded-full bg-cyan-500 hover:bg-cyan-800'>
+              <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='p-2 px-4 mt-8 text-xl font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
                 LinkedIn
               </a>
             </div>
