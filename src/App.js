@@ -37,7 +37,7 @@ function App() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
-                className="py-4 mt-8 text-4xl font-medium tracking-tight text-center text-transparent bg-gradient-to-br from-purple-300 to-slate-500 bg-clip-text md:text-7xl">
+                className="py-4 mt-8 text-4xl font-medium tracking-tight text-center text-transparent bg-gradient-to-b from-purple-200 to-slate-500 bg-clip-text md:text-7xl">
                   Hello, I'm Chase. <br /> I'm a software developer. <br />
               </motion.h1>
               <motion.button 
@@ -49,7 +49,7 @@ function App() {
                   ease: "easeInOut",
                 }}
                 onClick={() => scrollTo('portfolio')}
-                className='z-40 items-center p-2 px-4 text-lg text-white bg-purple-500 rounded-full hover:bg-purple-800'>
+                className='z-40 items-center p-2 px-4 text-lg font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
                   Learn More
               </motion.button>
             </LampContainer>
@@ -60,7 +60,7 @@ function App() {
         <section id="portfolio" className="relative z-40 flex items-center justify-center min-h-screen text-center bg-transparent scroll-m-24">
           <div className='flex-col items-center w-screen space-y-6'>
             <div>
-              <h2 id="portfolio-title" className="text-3xl font-bold text-white">Portfolio</h2>
+              <h2 id="portfolio-title" className="text-5xl font-bold text-white">Portfolio</h2>
             </div>
             <div className='flex flex-col items-center justify-center w-full space-y-8'>
               <ProjectCard title="Jukeboxd" image={jukeboxd} technologies={["Java", "Spring Boot", "JavaScript", "React", "PostgreSQL", "TailwindCSS", "Spotify API", "Git", "HTML"]} demoLink="https://jukeboxd.vercel.app/" repoLink="https://github.com/chasekellogg12/jukeboxd-frontend" desc={["Developed a full-stack social platform similar to movie-reviewing site ‘Letterboxd’ but for music instead of films", "Designed a robust RESTful API with full CRUD operations and JWT authentication (Spring Security), allowing users to search 100 million+ songs (Spotify API), write reviews, engage with posts, customize profiles, and follow others", "Wrote a Python script to make 500+ bot users in minutes using Selenium WebDriver & GPT-4 (to generate user info)"]}/>
@@ -73,7 +73,7 @@ function App() {
         
         <section id="contact" className="relative z-40 flex items-center justify-center min-h-screen text-center text-white bg-transparent">
           <div className='space-y-6'>
-            <h2 className="text-3xl font-bold">Contact Me</h2>
+            <h2 className="text-5xl font-bold">Contact Me</h2>
             <div className='flex-col items-center justify-center'>
               <p>Feel free to shoot me a message via</p>
               <p className='text-xl font-bold text-purple-500'>chasekellogg12@gmail.com</p>
