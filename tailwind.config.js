@@ -17,7 +17,21 @@ module.exports = {
         "l-purple": "#494B68",
         "teal": "#1E4258",
         "mint": "#2D5F5D"
-      }
+      },
+      animation: { // Animations extend here
+        shimmer: "shimmer 2s linear infinite",
+        shimmerSlow: "shimmer 6s linear infinite",
+      },
+      keyframes: { // Keyframes extend here
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+      },
     },
   },
   plugins: [addVariablesForColors],
@@ -32,5 +46,5 @@ function addVariablesForColors({ addBase, theme }) {
   addBase({
     ":root": newVars,
   });
-}
+};
 
