@@ -12,6 +12,8 @@ import emorylane from './assets/EmoryLane.png';
 import predictingtraffic from './assets/PredictingTraffic.png';
 import { motion } from "framer-motion";
 import { LampContainer } from './components/LampContainer';
+import { ReactIcon } from './stackIcons/StackIcons';
+import Technology from './components/Technology';
 
 function App() {
   const scrollTo = (sectionId) => {
@@ -48,16 +50,69 @@ function App() {
                   duration: 0.8,
                   ease: "easeInOut",
                 }}
-                onClick={() => scrollTo('portfolio')}
+                onClick={() => scrollTo('about')}
                 className='z-40 items-center p-2 px-4 text-lg font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
                   Learn More
               </motion.button>
             </LampContainer>
           </div>
         </section>
+        <section id="about" className="relative z-40 flex items-center justify-center min-h-screen overflow-y-auto text-center text-white bg-transparent scroll-m-24">
+              <div id='blurb-and-photo' className='flex justify-center w-[1100px] space-x-6'>
+                <div className='flex flex-col items-center justify-around w-1/2'>
+                  <h2 className="text-5xl font-medium text-transparent bg-gradient-to-b from-purple-200 to-slate-500 bg-clip-text">About Me</h2>
+                  <div className='flex items-center p-4 px-6 overflow-y-auto text-left'>
+                    <p className='font-medium'>
+                      I’m a recent graduate of Emory University with a dual degree in Computer Science and Business. My lifelong passion for coding began over a decade ago in middle school when I wrote scripts in Lua to make games. <br/><br/>
+                      My journey has since evolved from crafting simple games and moderating Lua forums to mastering full-stack web development. As a developer, I mend a meticulous attention to detail with a broad technical skill set. Driven by curiosity and an unwavering dedication to learning, I thrive on finding elegant solutions to complex challenges. <br/><br/>
+                      When I'm not coding, you can find me cheering on the Los Angeles Chargers or hanging out with my cat. <br/><br/>
+                      Thank you for visiting my site. I am eager to contribute my skills to your team, and I look forward to the opportunity to grow and create impactful technology solutions together.
+                    </p>
+                  </div>
+                  <motion.button 
+                    initial={{ opacity: 0.5, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                      delay: 0.3,
+                      duration: 0.8,
+                      ease: "easeInOut",
+                    }}
+                    onClick={() => scrollTo('portfolio')}
+                    className='z-40 items-center p-2 px-4 text-lg font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
+                      Portfolio
+                  </motion.button>
+                </div>
+                <div id='headshot-and-tech-stack' className='flex flex-col items-center w-1/2 space-y-6 overflow-x-auto'>
+                    <img src={HDhs} alt="Headshot" className="object-cover rounded-full w-72 h-72"/>
+                    <div className='flex flex-col items-center w-full overflow-x-auto'>
+                      <div className='flex justify-center w-full'>
+                        <Technology type="React"></Technology>
+                        <Technology type="Java"></Technology>
+                        <Technology type="Python"></Technology>
+                        <Technology type="Git"></Technology>
+                      </div>
+                      <div className='flex justify-center w-full'>
+                        <Technology type="JavaScript"></Technology>
+                        <Technology type="Swift"></Technology>
+                        <Technology type="Spring"></Technology>
+                        <Technology type="HTML"></Technology>
+                      </div>
+                      <div className='flex justify-center w-full'>
+                        <Technology type="PostgreSQL"></Technology>
+                        <Technology type="Hibernate"></Technology>
+                        <Technology type="Flask"></Technology>
+                      </div>
+                      <div className='flex justify-center w-full'>
+                        <Technology type="TailwindCSS"></Technology>
+                        <Technology type="Jira"></Technology>
+                        <Technology type="SpringBoot"></Technology>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-        <section id="portfolio" className="relative z-40 flex items-center justify-center min-h-screen text-center bg-transparent scroll-m-24">
+        <section id="portfolio" className="relative z-40 flex items-center justify-center min-h-screen mt-24 text-center bg-transparent scroll-m-24">
           <div className='flex-col items-center w-screen space-y-8'>
             <div>
               <h2 id="portfolio-title" className="text-5xl font-medium text-transparent bg-gradient-to-b from-slate-500 to-purple-200 bg-clip-text">Portfolio</h2>
@@ -74,11 +129,11 @@ function App() {
         <section id="contact" className="relative z-40 flex items-center justify-center min-h-screen text-center text-white bg-transparent">
           <div className='space-y-6'>
             <h2 className="text-5xl font-medium text-transparent bg-gradient-to-b from-slate-500 to-purple-200 bg-clip-text">Contact Me</h2>
-            <div className='flex-col items-center justify-center'>
+            <div className='flex-col items-center justify-center font-medium'>
               <p>Feel free to shoot me a message via</p>
               <p className='text-xl font-bold text-purple-500'>chasekellogg12@gmail.com</p>
             </div>
-            <h3>or</h3>
+            <h3 className='font-medium'>or</h3>
             <div className='flex-col items-center justify-center h-full pt-3'>
               <a href="https://www.linkedin.com/in/chasekellogg/" target="_blank" rel="noopener noreferrer" className='p-2 px-4 mt-8 text-xl font-bold text-white bg-purple-500 rounded-full hover:bg-purple-800'>
                 LinkedIn

@@ -2,7 +2,7 @@ import { BackgroundGradient } from "./BackgroundGradient";
 import hs from '../assets/headshot.jpeg';
 import CardButton from "./CardButton";
 
-export const ProjectCard = ({title, image, technologies, desc, demoLink, repoLink} ) => {
+export const ProjectCard = ({title, image, technologies, desc, demoLink, repoLink}) => {
     return (
         <div id={title} className='flex justify-center w-full'>
             <BackgroundGradient containerClassName="flex w-[1100px] h-[400px] justify-center" className="flex h-full rounded-[22px] w-full pl-10 pt-10 pb-10  bg-zinc-900 dark:bg-zinc-900 overflow-auto">

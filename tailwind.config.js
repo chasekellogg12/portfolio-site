@@ -3,10 +3,12 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
 
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    './src/*.html',
   ],
   darkMode: "class",
   theme: {
@@ -34,7 +36,7 @@ module.exports = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, addDynamicIconSelectors],
 };
 
 function addVariablesForColors({ addBase, theme }) {

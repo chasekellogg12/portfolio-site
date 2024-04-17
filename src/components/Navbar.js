@@ -21,20 +21,11 @@ function Navbar() {
                     </button>
                 </div>
                 <div id='info-buttons' className='flex w-1/2 justify-evenly'>
-                    <button 
-                        onClick={() => {
-                            window.scrollTo({
-                                top: 0,
-                                behavior: 'smooth'
-                            });
-                            }}>
-                            About
-                    </button>
+                    <button onClick={() => scrollToSection('about')}>About</button>
                     <button onClick={() => scrollToSection('portfolio')}>Portfolio</button>
                     <button onClick={() => scrollToSection('contact')}>Contact</button>
                     <button>Resume</button>
                 </div>
-
             </div>
         </div>
      );
