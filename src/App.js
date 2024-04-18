@@ -2,8 +2,6 @@ import './App.css';
 import './index.css'; // adjust this path if your CSS file is located differently
 import { BackgroundBeams } from './BackgroundBeams';
 import Navbar from './components/Navbar';
-import hs from './assets/headshot.jpeg';
-import { BackgroundGradient } from './components/BackgroundGradient';
 import ProjectCard from './components/ProjectCard';
 import jukeboxd from './assets/Jukeboxd.png';
 import musicplayer from './assets/MusicPlayer.jpeg';
@@ -12,7 +10,6 @@ import emorylane from './assets/EmoryLane.png';
 import predictingtraffic from './assets/PredictingTraffic.png';
 import { motion } from "framer-motion";
 import { LampContainer } from './components/LampContainer';
-import { ReactIcon } from './stackIcons/StackIcons';
 import Technology from './components/Technology';
 
 function App() {
@@ -64,7 +61,7 @@ function App() {
                   <div className='flex items-center p-4 px-6 overflow-y-auto text-left'>
                     <p className='font-medium'>
                       I’m a recent graduate of Emory University with a dual degree in Computer Science and Business. My lifelong passion for coding began over a decade ago in middle school when I wrote scripts in Lua to make games. <br/><br/>
-                      My journey has since evolved from crafting simple games and moderating Lua forums to mastering full-stack web development. As a developer, I mend a meticulous attention to detail with a broad technical skill set. Driven by curiosity and an unwavering dedication to learning, I thrive on finding elegant solutions to complex challenges. <br/><br/>
+                      My journey has since evolved from crafting simple games and moderating Lua forums to mastering full-stack web development. As a developer, I fuse a meticulous attention to detail with a broad technical skill set. Driven by curiosity and an unwavering dedication to learning, I thrive on finding elegant solutions to complex challenges. <br/><br/>
                       When I'm not coding, you can find me cheering on the LA Chargers, going to the gym, or hanging out with my cat. <br/><br/>
                       Thank you for visiting my site. I'm always eager to learn from and share my skills with equally-passionate engineers, so don't hesitate to reach out!
                     </p>
