@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 800);
+      setIsSmallScreen(window.innerWidth < 850);
     };
 
     checkScreenSize();
@@ -83,11 +83,11 @@ function App() {
                 </LampContainer>
               </div>
             </section>
-            <section id="about" className="relative z-40 flex items-center justify-center min-h-screen overflow-y-auto text-center text-white bg-transparent scroll-m-24">
-                  <div id='blurb-and-photo' className='flex justify-center w-[1100px] space-x-6'>
+            <section id="about" className="relative z-40 flex items-center justify-center min-h-screen text-center text-white bg-transparent snap scroll-m-8">
+                  <div id='blurb-and-photo' className='flex justify-center w-[1100px] space-x-6 snap-end'>
                     <div className='flex flex-col items-center justify-around w-1/2'>
                       <h2 className="text-5xl font-medium text-transparent bg-gradient-to-b from-purple-200 to-slate-500 bg-clip-text">About Me</h2>
-                      <div className='flex items-center p-4 px-6 overflow-y-auto text-left'>
+                      <div className='flex items-center p-4 px-6 text-center'>
                         <p className='font-medium'>
                           I’m a recent graduate of Emory University with a dual degree in Computer Science and Business. My lifelong passion for coding began over a decade ago in middle school when I wrote scripts in Lua to make games. <br/><br/>
                           My journey has since evolved from crafting simple games and moderating Lua forums to mastering full-stack web development. As a developer, I fuse a meticulous attention to detail with a broad technical skill set. Driven by curiosity and an unwavering dedication to learning, I thrive on finding elegant solutions to complex challenges. <br/><br/>
@@ -96,7 +96,7 @@ function App() {
                         </p>
                       </div>
                       <motion.div 
-                        initial={{ opacity: 0.5, y: 100 }}
+                        //initial={{ opacity: 0.5, y: 100 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{
                           delay: 0.3,
