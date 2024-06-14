@@ -66,7 +66,7 @@ function App() {
                       ease: "easeInOut",
                     }}
                     className="py-4 mt-8 text-4xl font-medium tracking-tight text-center text-transparent bg-gradient-to-b from-purple-200 to-slate-500 bg-clip-text md:text-7xl">
-                      Hello, I'm Chase. <br /> I'm a software developer. <br />
+                      Hello, I'm Chase. <br /> I build software. <br />
                   </motion.h1>
                   <motion.button 
                     initial={{ opacity: 0.5, y: 100 }}
@@ -90,7 +90,7 @@ function App() {
                       <div className='flex items-center p-4 px-6 text-center'>
                         <p className='font-medium'>
                           I’m a recent graduate of Emory University with a dual degree in Computer Science and Business. My lifelong passion for coding began over a decade ago in middle school when I wrote scripts in Lua to make games. <br/><br/>
-                          My journey has since evolved from crafting simple games and moderating Lua forums to mastering full-stack web development. As a developer, I fuse a meticulous attention to detail with a broad technical skill set. Driven by curiosity and an unwavering dedication to learning, I thrive on finding elegant solutions to complex challenges. <br/><br/>
+                          My journey has since evolved from crafting simple games and moderating Lua forums to engineering a variety of robust software projects. As a developer, I fuse a meticulous attention to detail with a broad technical skill set. Driven by curiosity and an unwavering dedication to learning, I thrive on finding elegant solutions to complex challenges. <br/><br/>
                           When I'm not coding, you can find me cheering on the LA Chargers, going to the gym, or hanging out with my cat. <br/><br/>
                           Thank you for visiting my site. I'm always eager to learn from and share my skills with equally-passionate engineers, so don't hesitate to reach out!
                         </p>

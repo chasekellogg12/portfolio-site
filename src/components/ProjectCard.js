@@ -1,5 +1,4 @@
 import { BackgroundGradient } from "./BackgroundGradient";
-import hs from '../assets/headshot.jpeg';
 import CardButton from "./CardButton";
 
 export const ProjectCard = ({title, image, technologies, desc, documentationLink, liveSiteLink, codeLink, backendLink, frontendLink}) => {
@@ -7,7 +6,7 @@ export const ProjectCard = ({title, image, technologies, desc, documentationLink
         <div id={title} className='flex justify-center w-full'>
             <BackgroundGradient containerClassName="flex w-[1100px] h-[400px] justify-center" className="flex h-full rounded-[22px] w-full pl-10 pt-10 pb-10  bg-zinc-900 dark:bg-zinc-900 overflow-auto">
                 <div id="projectInfo" className='flex flex-col justify-between w-1/2 h-full'>
-                    <div className='mb-2 space-y-2'>
+                    <div className='mb-2 space-y-2 overflow-y-auto'>
                         <p className="mb-2 text-2xl font-bold text-left text-white">
                             {title}
                         </p>
@@ -24,7 +23,7 @@ export const ProjectCard = ({title, image, technologies, desc, documentationLink
                             ))}
                         </ul>
                     </div>
-                    <div className='flex justify-start w-full mt-3 space-x-6'>
+                    <div className='flex justify-start w-full mt-3 space-x-6 overflow-y-auto'>
                         {documentationLink && 
                             <CardButton text="Documentation" link={documentationLink}/>
                         }

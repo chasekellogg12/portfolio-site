@@ -7,18 +7,18 @@ function Navbar() {
         }
     };
     return (
-        <div id='navbar' className='fixed inset-x-0 top-0 z-50 h-16 font-medium text-center text-white border-b-2 border-purple-500 bg-zinc-900'>
+        <div id='navbar' className='fixed inset-x-0 top-0 z-50 h-16 font-bold text-center text-white bg-black border-b-2 border-purple-500'>
             <div className='flex items-center justify-around w-full h-full'>
                 <div id='home-button' className='flex w-1/2 pl-20'>
                     <button 
-                        className="text-3xl font-extrabold text-center text-transparent bg-gradient-to-b from-white to-white hover:to-purple-500 hover:via-purple-600 hover:from-purple-700 bg-clip-text"
+                        className="text-3xl font-medium text-center text-transparent bg-gradient-to-b from-white to-white hover:to-purple-500 hover:via-purple-600 hover:from-purple-700 bg-clip-text"
                         onClick={() => {
                             window.scrollTo({
                                 top: 0,
                                 behavior: 'smooth'
                             });
                             }}>
-                            Chase Kellogg
+                            chasekellogg
                     </button>
                 </div>
                 <div id='info-buttons' className='flex w-1/2 justify-evenly'>
