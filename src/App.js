@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 768); // Adjust the width as per your requirement
+      setIsSmallScreen(window.innerWidth < 800);
     };
 
     checkScreenSize();
@@ -113,30 +113,23 @@ function App() {
                           </button>
                       </motion.div>
                     </div>
-                    <div id='headshot-and-tech-stack' className='flex flex-col items-center w-1/2 space-y-6 overflow-x-auto'>
+                    <div id='headshot-and-tech-stack' className='flex flex-col items-center w-1/2 space-y-6'>
                         <img src={HDhs} alt="Headshot" className="object-cover rounded-full w-72 h-72"/>
-                        <div className='flex flex-col items-center w-full overflow-x-auto'>
-                          <div className='flex justify-center w-full'>
+                        <div className='w-full overflow-x-auto'>
+                          <div className='flex flex-wrap justify-center w-full'>
                             <Technology type="React"></Technology>
                             <Technology type="Java"></Technology>
                             <Technology type="Python"></Technology>
                             <Technology type="Git"></Technology>
-                          </div>
-                          <div className='flex justify-center w-full'>
                             <Technology type="JavaScript"></Technology>
                             <Technology type="Swift"></Technology>
                             <Technology type="Spring"></Technology>
                             <Technology type="HTML"></Technology>
-                          </div>
-                          <div className='flex justify-center w-full'>
                             <Technology type="PostgreSQL"></Technology>
                             <Technology type="Hibernate"></Technology>
                             <Technology type="Flask"></Technology>
-                          </div>
-                          <div className='flex justify-center w-full'>
                             <Technology type="TailwindCSS"></Technology>
                             <Technology type="Jira"></Technology>
-                            <Technology type="SpringBoot"></Technology>
                           </div>
                         </div>
                     </div>
