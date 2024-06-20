@@ -41,7 +41,7 @@ export const ProjectCard = ({title, image, technologies, desc, documentationLink
                         }
                     </div>
                 </div>
-                <div id="projectPhoto" className='flex items-end w-1/2'>
+                <div id="projectPhoto" className='flex items-end w-1/2 mx-8'>
                     <img
                         src={image}
                         alt="img"
